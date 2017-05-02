@@ -1,0 +1,473 @@
+@import (reference) "~common/style/main.less";
+@import "~common/style/icons.less";
+
+.erp-highlight-tips {
+  color: #3999f7;
+}
+
+.project-manage {
+  width: 1230px;
+  margin: auto;
+  .button-section {
+    .upload {
+      .erp-btn-sm {
+        &:hover {
+          background: #e8e8e8;
+        }
+        background: #f6f6f6;
+        height: 28px;
+        font-size: 12px;
+        min-width: initial;
+        border-radius: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
+        line-height: 26px;
+      }
+    }
+    .erp-btn-sm {
+      &:hover {
+        background: #e8e8e8;
+      }
+      background: #f6f6f6;
+      height: 28px;
+      font-size: 12px;
+      min-width: initial;
+      border-radius: 4px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .erp-icon {
+      font-size: 13px;
+    }
+  }
+  .button-attachment {
+    padding: 0 5px;
+    .erp-icon {
+      font-size: 13px;;
+    }
+  }
+  .attachment-button .upload {
+    .erp-icon {
+      font-size: 13px;
+    }
+    .file-type {
+      margin-bottom: 1px;
+    }
+    .filename {
+      line-height: 17px;
+    }
+    .erp-btn-sm {
+      padding: 0 5px;
+      height: 30px;
+      line-height: 25px;
+    }
+    .error {
+      margin-left: 10px;
+      padding: 4px 5px 6px;
+      .cancelMessage {
+        height: 17px;
+      }
+    }
+  }
+  .attachment-row {
+    height: 34px;
+  }
+  .clear {
+    .erp-autocomplete-comp .clear-all {
+      right: 3px;
+      top: 1px;
+    }
+  }
+  .model-footer {
+    padding: 0px 12px 0;
+    margin-top: -10px;
+  }
+  .modal-row {
+    .section-body > .erp-row.section-row {
+      padding: 6px 0;
+    }
+  }
+  [class$=currencyText] > input {
+    text-align: right;
+  }
+  .negative-value > input {
+    color: red;
+    text-align: right;
+  }
+  .content {
+    width: 1060px;
+    margin: auto;
+  }
+  .sidebar {
+    ul {
+      padding-left: 0;
+    }
+  }
+  .workspace {
+    position: relative;
+  }
+  .comp-textarea {
+    width: 100%;
+    height: 86px;
+  }
+  .panel-actions {
+    z-index: 1;
+  }
+  .upload-style {
+    margin-left: -8px;
+  }
+  .attachment-list {
+    .fileIcon {
+      vertical-align: middle;
+      margin-top: -4px;
+    }
+    .attach-item-disabled {
+      color: #999;
+    }
+    .attach-item {
+      padding: 8px;
+      font-size: 12px;
+      color: #3795e5;
+      display: inline-block;
+      text-align: center;
+      .remove {
+        cursor: pointer;
+        visibility: hidden;
+        color: #bbbfc7;
+      }
+      &:hover .remove {
+        visibility: visible;
+      }
+      .file-name {
+        margin-bottom: -3px;
+      }
+    }
+  }
+  .shadow-workspace {
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    left: 0px;
+    top: 0px;
+    opacity: 0.4;
+  }
+  .active-workspace {
+    z-index: 5;
+    background: #f6f9fd;
+    position: relative;
+    border: 1px solid #9ccffc;
+    .panel-header, .panel-body {
+      background: none;
+    }
+  }
+  .index {
+    .panel-actions {
+      margin-top: 10px;
+    }
+    .active-workspace {
+      background: transparent;
+      border-color: #e8e8e8;
+    }
+    .panel-body {
+      padding-bottom: 14px;
+    }
+    .textarea-max {
+      textarea.erp-textarea {
+        line-height: 18px;
+      }
+      height: 200px;
+    }
+  }
+  .bread-crumb {
+    margin: 10px 0;
+  }
+  //项目入库 section
+  #storage {
+    .panel-body {
+      padding-bottom: 14px;
+    }
+    label {
+      font-weight: bold;
+      text-align: right;
+      display: inline-block;
+      width: 100%;
+      //line-height: 21px;
+    }
+    .textarea-max {
+      textarea.erp-textarea {
+        line-height: 18px;
+      }
+      height: 200px;
+    }
+    .money {
+      margin-left: 6px;
+    }
+    .button-group span:first-child button {
+      margin-left: 0;
+    }
+    .label-margin, .label-margin-infos {
+      label {
+        margin: 0 -12px;
+        line-height: 28px;
+        span {
+          display: block;
+          height: 1px;
+        }
+      }
+    }
+    .label-margin-infos {
+      label {
+        line-height: 15px;
+      }
+    }
+  }
+  //项目初筛 section
+  #screening {
+    .panel-body {
+      padding-bottom: 14px;
+    }
+    .button-group span:first-child button {
+      margin-left: 0;
+    }
+    .textarea-max {
+      textarea.erp-textarea {
+        line-height: 18px;
+      }
+      height: 200px;
+    }
+  }
+  .navigation {
+    position: absolute;
+    top: 160px;
+    left: -5px;
+    li {
+      list-style: none;
+    }
+    .cycle {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #bbbfc7;
+      display: inline-block;
+      margin-left: -3px;
+    }
+    .out-cycle {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #fff;
+      display: inline-block;
+      margin-left: -5px;
+      border: 6px solid #3999f7;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #fff;
+        left: -3px;
+        top: -3px;
+        border: 3px solid #fff;
+      }
+    }
+    .line {
+      border-left: 2px dotted #bbbfc7;
+      display: block;
+      height: 34px;
+      &.finished {
+        border-left: 2px dotted #569fe7;
+      }
+    }
+    .finished {
+      color: #569fe7;
+    }
+    .title {
+      margin-left: 4px;
+      cursor: pointer;
+    }
+    .attach-row {
+      padding: 0 0 5px;
+    }
+  }
+
+  &.upload-error-modal {
+    .modal-wrap .modal .modal-body {
+      padding: 15px 25px;
+    }
+    .icon-image {
+      vertical-align: top;
+      margin-right: 5px
+    }
+    .info {
+      display: inline-block;
+      max-width: 320px;
+      text-align: left;
+    }
+    .confirm-info {
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+
+}
+
+#root {
+  .panel-title {
+    &:before {
+      background-color: #3898f7;
+      margin-right: 8px;
+    }
+
+  }
+  .not-before {
+    position: relative;
+    .panel-title {
+      padding-left: 60px;
+      padding-top: 2px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.line-thread {
+  border-bottom: dashed 1px #dddedf;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.-befe-erp-comps-basic-Section-component-use__compStyle___2crgr {
+  .section-body {
+    .erp-row {
+      &.section-row {
+        padding-bottom: 1px;
+      }
+    }
+  }
+}
+
+#screening {
+  .panel-body {
+    padding-bottom: 14px;
+  }
+}
+
+// 公司常用名 suggest
+.erp-popup-wrapper {
+  @total-width: 380px;
+  @width-common-name: 180px;
+  .inline-word {
+    color: #3999f7;
+  }
+  .suggest-common-name {
+    max-width: @width-common-name;
+  }
+
+  .suggest-company-name {
+    color: @color-directions;
+    max-width: @total-width - @width-common-name;
+    float: right;
+  }
+
+  .suggest-common-name,
+  .suggest-company-name {
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.title-status {
+  height: 20px;
+  line-height: 20px;
+  top: 11px;
+  display: inline-block;
+  position: absolute;
+  background-color: #d9d9d9;
+  padding-left: 8px;
+  padding-right: 6px;
+  color: #333;
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    top: 0;
+    border-style: solid;
+    border-width: 10px 4px;
+    border-color: transparent transparent transparent #d9d9d9;
+  }
+}
+
+.title-sucStatus {
+  height: 20px;
+  line-height: 20px;
+  top: 11px;
+  display: inline-block;
+  position: absolute;
+  background-color: #03b3b2;
+  padding-left: 8px;
+  padding-right: 6px;
+  color: #fff;
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    top: 0;
+    border-style: solid;
+    border-width: 10px 4px;
+    border-color: transparent transparent transparent #03b3b2;
+  }
+}
+
+.title-inStatus {
+  height: 20px;
+  line-height: 20px;
+  top: 11px;
+  display: inline-block;
+  position: absolute;
+  background-color: #3999f7;
+  padding-left: 8px;
+  padding-right: 6px;
+  color: #fff;
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    top: 0;
+    border-style: solid;
+    border-width: 10px 4px;
+    border-color: transparent transparent transparent #3999f7;
+  }
+}
+
+.title-ovStatus {
+  height: 20px;
+  line-height: 20px;
+  top: 11px;
+  display: inline-block;
+  position: absolute;
+  background-color: #ff900e;
+  padding-left: 8px;
+  padding-right: 6px;
+  color: #fff;
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    top: 0;
+    border-style: solid;
+    border-width: 10px 4px;
+    border-color: transparent transparent transparent #ff900e;
+  }
+}
